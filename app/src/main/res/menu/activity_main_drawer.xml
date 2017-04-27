@@ -3,34 +3,31 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_alta"
+            android:icon="@drawable/ic_menu_iniciar"
+            android:title="Alta profesional" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_iniciosesion"
+            android:icon="@drawable/ic_menu_iniciar"
+            android:title="Iniciar Sesión" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_busqueda"
+        android:icon="@drawable/ic_menu_busqueda"
+        android:title="Búsqueda avanzada" />
+    <item
+        android:id="@+id/nav_presupuesto"
+        android:icon="@drawable/ic_menu_presupuesto"
+        android:title="Pedir un presupuesto" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ajustes"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ajustes" />
+    </group>
 
 </menu>

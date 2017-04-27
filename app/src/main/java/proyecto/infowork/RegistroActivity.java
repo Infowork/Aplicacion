@@ -154,9 +154,10 @@ public class RegistroActivity extends AppCompatActivity {
 
         @Override
         protected Boolean doInBackground(String... params) {
-            GestionComunicacion gcom=new GestionComunicacion();
-            gcom.existeDni(params[0]);
-            return gcom.existeDni(params[0]);
+            //GestionComunicacion gcom=new GestionComunicacion();
+            //gcom.existeDni(params[0]);
+            //return gcom.existeDni(params[0]);
+            return null;
         }
     }
 
@@ -165,8 +166,8 @@ public class RegistroActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(String... params) {
-            GestionComunicacion gcom=new GestionComunicacion();
-            gcom.enviarDatos(params[0]);
+            //GestionComunicacion gcom=new GestionComunicacion();
+            //gcom.enviarDatos(params[0]);
             return null;
         }
     }
