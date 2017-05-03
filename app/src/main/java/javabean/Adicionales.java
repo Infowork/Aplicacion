@@ -1,6 +1,8 @@
 package javabean;
 
-public class Adicionales {
+import java.io.Serializable;
+
+public class Adicionales implements Serializable{
 
 	private String dni,titulo,descripcion;
 

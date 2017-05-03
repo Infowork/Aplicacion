@@ -1,6 +1,8 @@
 package javabean;
 
-public class Datos {
+import java.io.Serializable;
+
+public class Datos implements Serializable{
 	
 	private String dni;
 	private String empresa;

@@ -1,8 +1,9 @@
 package javabean;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Puntuacion {
+public class Puntuacion implements Serializable{
 	
 	private String dni;
 	private ArrayList<String> review;

@@ -1,6 +1,8 @@
 package javabean;
 
-public class Localizacion {
+import java.io.Serializable;
+
+public class Localizacion implements Serializable{
 
 	private String dni;
 	private double latitud,longitud;

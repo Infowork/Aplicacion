@@ -37,14 +37,15 @@ public class GestionPermisosIniciales {
         permisos.add("Manifest.permission.READ_CONTACTS");
         this.ctx=ctx;
         this.act=act;
-        for(int i=0;i<permisos.size();i++){
+        /*for(int i=0;i<permisos.size();i++){
             if(!comprobarPermiso(permisos.get(i))){
                 permisosFallidos.add(permisos.get(i));
             }
         }
         if(permisosFallidos.size()>0){
             pedirPermiso(permisosFallidos);
-        }
+        }*/
+        pedirPermiso(permisos);
 
     }
 
@@ -67,11 +68,11 @@ public class GestionPermisosIniciales {
             permiso[i]=permisos.get(i);
         }
 
-        AlertDialog.Builder cuadro=new AlertDialog.Builder(act);
+        /*AlertDialog.Builder cuadro=new AlertDialog.Builder(act);
         cuadro.setTitle("Permisos");
         cuadro.setMessage("Los permisos siguientes son necesarios para el funcionamiento de la app.");
         cuadro.setPositiveButton(android.R.string.ok,null);
-        cuadro.show();
+        cuadro.show();*/
 
         //And finally ask for the permission
         ActivityCompat.requestPermissions(act, permiso, PermissionCode);

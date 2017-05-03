@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="proyecto.infowork">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -8,19 +9,13 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" />
 
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_PROFILE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -44,12 +39,30 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Perfil2Activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".RegistroActivity" />
-        <activity android:name=".ValoracionesActivity" />
-        <activity android:name=".PerfilActivity" />
-        <activity android:name=".SelecProfActivity"></activity>
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfesionActivity"
+            android:label="@string/title_activity_profesion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegistroActivity"
+            android:label="@string/title_activity_registro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExitoActivity"
+            android:label="@string/title_activity_exito"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ModificarActivity"
+            android:label="@string/title_activity_modificar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ValoracionActivity"></activity>
     </application>
 
 </manifest>

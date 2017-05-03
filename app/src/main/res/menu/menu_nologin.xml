@@ -5,7 +5,7 @@
         <item
             android:id="@+id/nav_alta"
             android:icon="@drawable/ic_menu_iniciar"
-            android:title="Alta profesional" />
+            android:title="Darse de alta" />
         <item
             android:id="@+id/nav_iniciosesion"
             android:icon="@drawable/ic_menu_iniciar"

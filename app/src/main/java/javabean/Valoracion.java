@@ -1,6 +1,8 @@
 package javabean;
 
-public class Valoracion {
+import java.io.Serializable;
+
+public class Valoracion implements Serializable{
 
 	private String dni,texto;
 	private int puntuacion;
